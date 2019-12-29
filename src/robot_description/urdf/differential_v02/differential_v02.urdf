@@ -1,0 +1,174 @@
+<?xml version="1.0"?>
+<robot name="differential_v02">
+
+<!--Links-->
+
+<!-- Base Link -->
+<link name="base_link">
+    <visual>
+      <geometry>
+        <box size="1.5 1.5 0.5"/>
+      </geometry>
+      <material name="silver">
+        <color rgba="0.75 0.75 0.75 1"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="1.5 1.5 0.5"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.45"/>
+      <inertia ixx="0.09375" iyy="0.09375" izz="0.16875" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+</link>
+
+<!--Right Wheel-->
+<link name="right_wheel">
+    <visual>
+      <geometry>
+        <cylinder length="0.2" radius="0.3"/>
+      </geometry>
+      <origin rpy="1.5708 0 0" xyz="0 0 0"/>
+      <material name="black">
+        <color rgba="0 0 0 1"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.2" radius="0.3"/>
+      </geometry>
+      <origin rpy="1.5708 0 0" xyz="0 0 0"/>
+    </collision>
+    <inertial>
+      <mass value="0.02"/>
+      <inertia ixx="0.000516666666667" iyy="0.000516666666667" izz="0.0009" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+</link>
+
+<!--Left Wheel-->
+<link name="left_wheel">
+    <visual>
+      <geometry>
+        <cylinder length="0.2" radius="0.3"/>
+      </geometry>
+      <origin rpy="1.5708 0 0" xyz="0 0 0"/>
+      <material name="black">
+        <color rgba="0 0 0 1"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.2" radius="0.3"/>
+      </geometry>
+      <origin rpy="1.5708 0 0" xyz="0 0 0"/>
+    </collision>
+    <inertial>
+      <mass value="0.02"/>
+      <inertia ixx="0.000516666666667" iyy="0.000516666666667" izz="0.0009" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+</link>
+
+
+<!--Caster-->
+<link name="caster">
+    <visual>
+      <geometry>
+        <cylinder length="0.4" radius="0.1"/>
+      </geometry>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <material name="black">
+        <color rgba="0 0 0 1"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.4" radius="0.1"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.01"/>
+      <inertia ixx="0.000158333333333" iyy="0.000158333333333" izz="5e-05" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+</link>
+
+
+<!--Caster Wheel-->
+<link name="caster_wheel">
+    <visual>
+      <geometry>
+        <cylinder length="0.1" radius="0.1"/>
+      </geometry>
+      <origin rpy="1.5708 0 0" xyz="0 0 0"/>
+      <material name="black">
+        <color rgba="0 0 0 1"/>
+      </material>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.1" radius="0.1"/>
+      </geometry>
+      <origin rpy="1.5708 0 0" xyz="0 0 0"/>
+    </collision>
+    <inertial>
+      <mass value="0.01"/>
+      <inertia ixx="3.33333333333e-05" iyy="3.33333333333e-05" izz="5e-05" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+</link>
+
+
+<!--Joints-->
+
+<!-- Right Wheel Joint-->
+ <joint name="right_wheel_joint" type="continuous">
+    <axis xyz="0 1 0"/>
+    <parent link="base_link"/>
+    <child link="right_wheel"/>
+    <origin rpy="0 0 0" xyz=".45 0.9 -0.1"/>
+  </joint>
+
+<!-- Left Wheel Joint-->
+ <joint name="left_wheel_joint" type="continuous">
+    <axis xyz="0 1 0"/>
+    <parent link="base_link"/>
+    <child link="left_wheel"/>
+    <origin rpy="0 0 0" xyz=".45 -0.9 -0.1"/>
+  </joint>
+
+
+<!-- Caster Joint-->
+ <joint name="caster_joint" type="continuous">
+    <axis xyz="0 0 1"/>
+    <parent link="base_link"/>
+    <child link="caster"/>
+    <origin rpy="0 0 0" xyz="-0.86 0 -0.05"/>
+  </joint>
+
+   <!-- Caster Wheel Joint-->
+ <joint name="caster_wheel_joint" type="continuous">
+    <axis xyz="0 1 0"/>
+    <parent link="caster"/>
+    <child link="caster_wheel"/>
+    <origin rpy="0 0 0" xyz="-0.1 0 -0.31"/>
+  </joint>
+
+<gazebo reference="right_wheel">
+  <mu1>100000.0</mu1>
+  <mu2>100000.0</mu2>
+  <material>Gazebo/Black</material>
+</gazebo>
+
+<gazebo reference="left_wheel">
+  <mu1>100000.0</mu1>
+  <mu2>100000.0</mu2>
+  <material>Gazebo/Black</material>
+</gazebo>
+
+<gazebo reference="caster_wheel">
+  <mu1>100.0</mu1>
+  <mu2>100.0</mu2>
+  <material>Gazebo/Black</material>
+</gazebo>
+
+  </robot>

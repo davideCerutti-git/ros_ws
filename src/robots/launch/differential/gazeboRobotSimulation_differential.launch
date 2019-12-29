@@ -1,0 +1,27 @@
+
+<launch>
+
+
+
+  <!-- Vehicle pose -->
+    <arg name="x" default="1.0"/>
+    <arg name="y" default="1.0"/>
+    <arg name="z" default="0.1"/>
+    <arg name="roll" default="0.0"/>
+    <arg name="pitch" default="0.0"/>
+    <arg name="yaw" default="3.14159"/>
+    
+<!-- Load the differential_robot URDF model into the parameter server -->
+  <param name="robot_description" textfile="$(find robot_description)/urdf/differential/differential_robot.urdf" />
+ 
+  <!-- Create the world. includo un launch file esterno passandogli "world_name" come argomento-->
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+      <arg name="world_name" value="$(find robot_description)/worlds/gazeboRobot.world"/>
+    </include>
+  <!-- Spawn a differentialò_robot in Gazebo, taking the description from the
+       parameter server -->
+  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model"
+        args="-param robot_description -urdf -model differential_robot
+        -x $(arg x) -y $(arg y) -z $(arg z)
+        -R $(arg roll) -P $(arg pitch) -Y $(arg yaw)" />
+</launch>

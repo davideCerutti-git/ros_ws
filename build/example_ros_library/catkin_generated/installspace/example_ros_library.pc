@@ -1,0 +1,8 @@
+prefix=/home/davide/ros_ws/install
+
+Name: example_ros_library
+Description: Description of example_ros_library
+Version: 0.0.0
+Cflags: -I/home/davide/ros_ws/install/include
+Libs: -L/home/davide/ros_ws/install/lib -lexample_ros_library
+Requires: roscpp std_msgs std_srvs

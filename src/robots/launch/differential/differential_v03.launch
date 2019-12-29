@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+
+
+
+<launch>
+ <arg name="x" default="1.0"/>
+    <arg name="y" default="1.0"/>
+    <arg name="z" default="0.1"/>
+    <arg name="roll" default="0.0"/>
+    <arg name="pitch" default="0.0"/>
+    <arg name="yaw" default="3.14159"/>
+<!--<arg name="world_name" default="worlds/empty.world"/>-->
+
+<!-- Create the world. includo un launch file esterno passandogli "world_name" come argomento-->
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+      <arg name="world_name" value="$(find robot_description)/worlds/gazeboRobot.world"/>
+    </include>
+
+    <!-- Create the world.
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+      <arg name="world_name" value="$(arg world_name)"/>
+    </include>-->
+
+    <!-- Robot Description -->
+    <param name="robot_description" textfile="$(find robot_description)/urdf/differential_v03/differential_v03.urdf"/>
+
+    <!-- Spawn the vehicle. 
+    <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model"
+          args="-urdf -param robot_description -model differential_v03"/>-->
+
+           <!-- Spawn a differential_robot in Gazebo, taking the description from the
+       parameter server -->
+  <node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model"
+        args="-param robot_description -urdf -model differential_robot
+        -x $(arg x) -y $(arg y) -z $(arg z)
+        -R $(arg roll) -P $(arg pitch) -Y $(arg yaw)" />
+
+    <!-- Load controllers configuration 
+     <rosparam file="$(find robot_description)/config/differential_v03.yaml" command="load"/> -->
+
+    <!-- Load the joint controllers. One of these publishes the joint states
+         to joint_states.
+    <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false"
+        output="screen" 
+          args="joint_state_controller my_mobile_base_controller"/>-->
+          
+ <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" /> 
+   
+</launch>

@@ -1,0 +1,8 @@
+prefix=/home/davide/ros_ws/devel
+
+Name: robot_description
+Description: Description of robot_description
+Version: 0.1.0
+Cflags: 
+Libs: -L/home/davide/ros_ws/devel/lib 
+Requires: 

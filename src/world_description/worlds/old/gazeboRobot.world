@@ -1,0 +1,50 @@
+﻿<?xml version="1.0"?>
+<!--
+  Gazebo ROS differential drive plugin demo
+  Try sending commands:
+    ros2 topic pub /demo/cmd_demo geometry_msgs/Twist '{linear: {x: 1.0}}' -1
+    ros2 topic pub /demo/cmd_demo geometry_msgs/Twist '{angular: {z: 0.1}}' -1
+  Try listening to odometry:
+    ros2 topic echo /demo/odom_demo
+  Try listening to TF:
+    ros2 run tf2_ros tf2_echo odom chassis
+    ros2 run tf2_ros tf2_echo chassis right_wheel
+    ros2 run tf2_ros tf2_echo chassis left_wheel
+-->
+<sdf version="1.6">
+  <world name="default">
+
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <include>
+      <uri>model://sun</uri>
+    </include>
+ <!--#### Robot model NOT USED ####-->
+   <!-- <include>
+      <uri>model://mobile_robot</uri>
+    </include>-->
+
+ <!--#### Walls model ####-->
+ <model name="Walls">
+    <pose>0 0 0  0 0 0</pose>
+    <static>true</static>
+    <link name="walls">
+      <visual name="Walls_visual">
+        <geometry>
+ 	            <!-- <mesh><uri>file://models/01_factory.dae</uri></mesh>-->
+ 	             <mesh><uri>model://walls.dae</uri></mesh>
+        </geometry>
+      </visual>
+    <collision name="Walls_collision">
+        <geometry>
+	             <!-- <mesh><uri>file://models/01_factory.dae</uri></mesh>-->
+	              <mesh><uri>model://walls.dae</uri></mesh>
+        </geometry>
+      </collision>
+    </link>
+  </model>
+
+  </world>
+</sdf>

@@ -92,7 +92,6 @@ example_ros_library_EXTERNAL_OBJECTS =
 /home/davide/ros_ws/devel/lib/libexample_ros_library.so: example_ros_library/CMakeFiles/example_ros_library.dir/build.make
 /home/davide/ros_ws/devel/lib/libexample_ros_library.so: /opt/ros/melodic/lib/libroscpp.so
 /home/davide/ros_ws/devel/lib/libexample_ros_library.so: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/davide/ros_ws/devel/lib/libexample_ros_library.so: /usr/lib/x86_64-linux-gnu/libboost_signals.so
 /home/davide/ros_ws/devel/lib/libexample_ros_library.so: /opt/ros/melodic/lib/librosconsole.so
 /home/davide/ros_ws/devel/lib/libexample_ros_library.so: /opt/ros/melodic/lib/librosconsole_log4cxx.so
 /home/davide/ros_ws/devel/lib/libexample_ros_library.so: /opt/ros/melodic/lib/librosconsole_backend_interface.so

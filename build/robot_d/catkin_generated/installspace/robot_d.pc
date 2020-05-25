@@ -1,0 +1,8 @@
+prefix=/home/davide/ros_ws/install
+
+Name: robot_d
+Description: Description of robot_d
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

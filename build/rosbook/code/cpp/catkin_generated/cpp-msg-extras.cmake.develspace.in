@@ -1,0 +1,2 @@
+set(cpp_MESSAGE_FILES "/home/davide/ros_ws/devel/share/cpp/msg/SampleAction.msg;/home/davide/ros_ws/devel/share/cpp/msg/SampleActionGoal.msg;/home/davide/ros_ws/devel/share/cpp/msg/SampleActionResult.msg;/home/davide/ros_ws/devel/share/cpp/msg/SampleActionFeedback.msg;/home/davide/ros_ws/devel/share/cpp/msg/SampleGoal.msg;/home/davide/ros_ws/devel/share/cpp/msg/SampleResult.msg;/home/davide/ros_ws/devel/share/cpp/msg/SampleFeedback.msg")
+set(cpp_SERVICE_FILES "/home/davide/ros_ws/src/rosbook/code/cpp/srv/WordCount.srv")

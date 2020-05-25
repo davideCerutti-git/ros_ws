@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="differentialRobot">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="71.854" />
+      <inertia
+        ixx="1.657"
+        ixy="-5.551E-16"
+        ixz="0.021573"
+        iyy="5.8166"
+        iyz="1.5029E-16"
+        izz="7.1645" />
+    </inertial>
+    <visual>
+      <geometry>
+        <!--<mesh
+          filename="package://robot_description/meshes/base_link.STL" />-->
+          <box size="1.0 0.33 0.16"/>
+      </geometry>
+      <!--<material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>-->
+    </visual>
+    <collision>
+      <geometry>
+        <!--<mesh
+          filename="package://robot_description/meshes/base_link.STL" />-->
+          <box size="1.0 0.33 0.16"/>
+      </geometry>
+    </collision>
+  </link>
+ <!-- <link
+    name="base_c_link">
+    <inertial>
+      <origin
+        xyz="5.5511E-17 0.002282 4.7425E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.53523" />
+      <inertia
+        ixx="0.00052562"
+        ixy="4.0805E-21"
+        ixz="3.7312E-19"
+        iyy="0.0012519"
+        iyz="-9.5907E-21"
+        izz="0.000729" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/base_c_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.64706 0.61961 0.58431 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/base_c_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="base_c_joint"
+    type="fixed">
+    <origin
+      xyz="-0.36 0 0.010238"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="base_c_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="fork_c_link">
+    <inertial>
+      <origin
+        xyz="-0.018778 -0.039352 7.4319E-09"
+        rpy="0 0 0" />
+      <mass
+        value="0.34679" />
+      <inertia
+        ixx="0.00062753"
+        ixy="-0.00012722"
+        ixz="-1.2248E-10"
+        iyy="0.00044283"
+        iyz="-4.7433E-11"
+        izz="0.00063004" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/fork_c_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.64706 0.61961 0.58431 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/fork_c_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="fork_c_joint"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="3.1416 -0.52774 3.1416" />
+    <parent
+      link="base_c_link" />
+    <child
+      link="fork_c_link" />
+    <axis
+      xyz="0 1 0" />
+  </joint>
+  <link
+    name="pin_c_link">
+    <inertial>
+      <origin
+        xyz="1.7486E-15 5.5511E-17 1.3878E-17"
+        rpy="0 0 0" />
+      <mass
+        value="0.09369" />
+      <inertia
+        ixx="2.8522E-06"
+        ixy="-1.9588E-20"
+        ixz="-1.319E-19"
+        iyy="3.6098E-05"
+        iyz="-6.088E-22"
+        izz="3.6098E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/pin_c_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.64706 0.61961 0.58431 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/pin_c_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="pin_c_joint"
+    type="fixed">
+    <origin
+      xyz="-0.042 -0.11024 0"
+      rpy="1.5646 1.5708 0" />
+    <parent
+      link="fork_c_link" />
+    <child
+      link="pin_c_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="bearing_c_link">
+    <inertial>
+      <origin
+        xyz="2.0262E-15 6.9389E-17 -1.6653E-16"
+        rpy="0 0 0" />
+      <mass
+        value="0.024819" />
+      <inertia
+        ixx="1.8031E-06"
+        ixy="2.1178E-20"
+        ixz="1.6782E-20"
+        iyy="8.266E-06"
+        iyz="-7.2222E-35"
+        izz="8.266E-06" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/bearing_c_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.64706 0.61961 0.58431 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/bearing_c_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="bearing_c_joint"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="-1.5646 0 0" />
+    <parent
+      link="pin_c_link" />
+    <child
+      link="bearing_c_link" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+  <link
+    name="wheel_c_link">
+    <inertial>
+      <origin
+        xyz="2.2204E-16 4.1633E-17 1.9706E-15"
+        rpy="0 0 0" />
+      <mass
+        value="0.56957" />
+      <inertia
+        ixx="0.00097832"
+        ixy="-2.8766E-20"
+        ixz="-4.3368E-19"
+        iyy="0.00097832"
+        iyz="-2.981E-18"
+        izz="0.0017885" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/wheel_c_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/wheel_c_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel_c_joint"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="3.1416 1.5708 -3.1416" />
+    <parent
+      link="bearing_c_link" />
+    <child
+      link="wheel_c_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>-->
+
+<link name="front_caster">
+    <visual>
+      <geometry>
+        <box size="0.1 0.1 0.3"/>
+      </geometry>
+      <material name="silver"/>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.1 0.1 0.3"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.1"/>
+      <inertia ixx="0.00083" iyy="0.00083" izz="0.000167" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+
+  <joint name="front_caster_joint" type="continuous">
+    <axis xyz="0 0 1"/>
+    <parent link="base_link"/>
+    <child link="front_caster"/>
+    <origin rpy="0 0 0" xyz="-0.7 0 0"/>
+  </joint>
+
+  <link name="front_wheel">
+    <visual>
+      <geometry>
+        <cylinder length="0.05" radius="0.035"/>
+      </geometry>
+      <material name="black"/>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.05" radius="0.035"/>
+      </geometry>
+    </collision>
+    <inertial>
+      <mass value="0.1"/>
+      <inertia ixx="5.1458e-5" iyy="5.1458e-5" izz="6.125e-5" ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </link>
+
+  <joint name="front_wheel_joint" type="continuous">
+    <axis xyz="0 0 1"/>
+    <parent link="front_caster"/>
+    <child link="front_wheel"/>
+    <origin rpy="-1.5708 0 0" xyz="0.05 0 -.15"/>
+  </joint>
+
+
+    <!--#############################################
+        ################ RIGHT WHEEL ################
+        #############################################
+    -->
+  <link
+    name="right_wheel_link">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="1.8206" />
+      <inertia
+        ixx="0.0042591"
+        ixy="5.421E-20"
+        ixz="8.4894E-20"
+        iyy="0.0042591"
+        iyz="-1.0925E-20"
+        izz="0.00656" />
+    </inertial>
+    <visual>
+      <geometry>
+        <cylinder length="0.1" radius="0.15"/>
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <cylinder length="0.1" radius="0.15"/>
+      </geometry>
+    </collision>
+  </link>
+
+  <joint
+    name="right_wheel_joint"
+    type="continuous">
+    <!-- Sistema di riferimento base link-->
+    <origin
+      xyz="0.32 -0.22 -0.064926"  
+      rpy="-1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="right_wheel_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+
+  
+
+
+
+    <!--#############################################
+        ################ LEFT WHEEL ################
+        #############################################
+    -->
+  <link
+    name="left_wheel_link">
+     
+  <inertial>
+      <origin
+        xyz="0 0 -0.054877"
+        rpy="0 0 0" />
+      <mass
+        value="1.8206" />
+      <inertia
+        ixx="0.0042591"
+        ixy="3.2526E-19"
+        ixz="8.9001E-20"
+        iyy="0.0042591"
+        iyz="2.098E-20"
+        izz="0.00656" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder length="0.1" radius="0.15"/>
+      </geometry>
+      
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <cylinder length="0.1" radius="0.15"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="left_wheel_joint"
+    type="continuous">
+    <origin
+      xyz="0.32 0.22 -0.064926"
+      rpy="1.5708 0 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="left_wheel_link" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+ <!-- <link
+    name="laser_sick_link">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/laser_sick_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_description/meshes/laser_sick_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="laser_sick_joint"
+    type="fixed">
+    <origin
+      xyz="0.501 0 0.0125"
+      rpy="0 0 1.5708" />
+    <parent
+      link="base_link" />
+    <child
+      link="laser_sick_link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>-->
+
+
+   <gazebo>
+    <plugin name="differential_drive_controller" filename="libgazebo_ros_diff_drive.so">
+      <leftJoint>left_wheel_joint</leftJoint>
+      <rightJoint>right_wheel_joint</rightJoint>
+      <robotBaseFrame>base_link</robotBaseFrame>
+      <wheelSeparation>0.33</wheelSeparation>
+      <wheelDiameter>0.15</wheelDiameter>
+      <publishWheelJointState>true</publishWheelJointState>
+    </plugin>
+  </gazebo>
+
+  <!--<gazebo>
+    <plugin name="joint_state_publisher" filename="libgazebo_ros_joint_state_publisher.so">
+      <jointName>fork_c_joint, wheel_c_joint, bearing_c_joint</jointName>
+    </plugin>
+  </gazebo>-->
+
+  <!--<gazebo reference="laser_sick_link">
+    <sensor type="ray" name="hokuyo">
+      <pose>0 0 0 0 0 0</pose>
+      <visualize>false</visualize>
+      <update_rate>40</update_rate>
+      <ray>
+        <scan>
+          <horizontal>
+            <samples>720</samples>
+            <resolution>1</resolution>
+            <min_angle>-1.570796</min_angle>
+            <max_angle>1.570796</max_angle>
+          </horizontal>
+        </scan>
+        <range>
+          <min>0.10</min>
+          <max>30.0</max>
+          <resolution>0.01</resolution>
+        </range>
+      </ray>
+      <plugin name="gpu_laser" filename="libgazebo_ros_laser.so">
+        <topicName>/scan</topicName>
+        <frameName>laser_sick_link</frameName>
+      </plugin>
+    </sensor>
+  </gazebo>-->
+</robot>

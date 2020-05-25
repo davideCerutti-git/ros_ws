@@ -92,7 +92,6 @@ example_ros_library_test_main_EXTERNAL_OBJECTS =
 /home/davide/ros_ws/devel/lib/example_ros_library/example_ros_library_test_main: example_ros_library/CMakeFiles/example_ros_library_test_main.dir/build.make
 /home/davide/ros_ws/devel/lib/example_ros_library/example_ros_library_test_main: /opt/ros/melodic/lib/libroscpp.so
 /home/davide/ros_ws/devel/lib/example_ros_library/example_ros_library_test_main: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/davide/ros_ws/devel/lib/example_ros_library/example_ros_library_test_main: /usr/lib/x86_64-linux-gnu/libboost_signals.so
 /home/davide/ros_ws/devel/lib/example_ros_library/example_ros_library_test_main: /opt/ros/melodic/lib/librosconsole.so
 /home/davide/ros_ws/devel/lib/example_ros_library/example_ros_library_test_main: /opt/ros/melodic/lib/librosconsole_log4cxx.so
 /home/davide/ros_ws/devel/lib/example_ros_library/example_ros_library_test_main: /opt/ros/melodic/lib/librosconsole_backend_interface.so
@@ -112,7 +111,6 @@ example_ros_library_test_main_EXTERNAL_OBJECTS =
 /home/davide/ros_ws/devel/lib/example_ros_library/example_ros_library_test_main: /home/davide/ros_ws/devel/lib/libexample_ros_library.so
 /home/davide/ros_ws/devel/lib/example_ros_library/example_ros_library_test_main: /opt/ros/melodic/lib/libroscpp.so
 /home/davide/ros_ws/devel/lib/example_ros_library/example_ros_library_test_main: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/davide/ros_ws/devel/lib/example_ros_library/example_ros_library_test_main: /usr/lib/x86_64-linux-gnu/libboost_signals.so
 /home/davide/ros_ws/devel/lib/example_ros_library/example_ros_library_test_main: /opt/ros/melodic/lib/librosconsole.so
 /home/davide/ros_ws/devel/lib/example_ros_library/example_ros_library_test_main: /opt/ros/melodic/lib/librosconsole_log4cxx.so
 /home/davide/ros_ws/devel/lib/example_ros_library/example_ros_library_test_main: /opt/ros/melodic/lib/librosconsole_backend_interface.so

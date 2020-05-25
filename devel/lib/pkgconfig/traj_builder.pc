@@ -4,5 +4,5 @@ Name: traj_builder
 Description: Description of traj_builder
 Version: 0.0.0
 Cflags: -I/home/davide/ros_ws/src/traj_builder/include
-Libs: -L/home/davide/ros_ws/devel/lib -ltraj_builder
+Libs: -L${prefix}/lib -ltraj_builder
 Requires: geometry_msgs nav_msgs roscpp

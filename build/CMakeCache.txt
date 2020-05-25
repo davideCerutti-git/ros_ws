@@ -296,6 +296,24 @@ catkin_DIR:PATH=/opt/ros/melodic/share/catkin/cmake
 //The directory containing a CMake configuration file for catkin_simple.
 catkin_simple_DIR:PATH=catkin_simple_DIR-NOTFOUND
 
+//Value Computed by CMake
+chessbot_BINARY_DIR:STATIC=/home/davide/ros_ws/build/rosbook/chessbot
+
+//Value Computed by CMake
+chessbot_SOURCE_DIR:STATIC=/home/davide/ros_ws/src/rosbook/chessbot
+
+//Value Computed by CMake
+cougarbot_moveit_config_BINARY_DIR:STATIC=/home/davide/ros_ws/build/rosbook/code/cougarbot_moveit_config
+
+//Value Computed by CMake
+cougarbot_moveit_config_SOURCE_DIR:STATIC=/home/davide/ros_ws/src/rosbook/code/cougarbot_moveit_config
+
+//Value Computed by CMake
+cpp_BINARY_DIR:STATIC=/home/davide/ros_ws/build/rosbook/code/cpp
+
+//Value Computed by CMake
+cpp_SOURCE_DIR:STATIC=/home/davide/ros_ws/src/rosbook/code/cpp
+
 //The directory containing a CMake configuration file for cpp_common.
 cpp_common_DIR:PATH=/opt/ros/melodic/share/cpp_common/cmake
 
@@ -306,7 +324,7 @@ dynamic_reconfigure_DIR:PATH=/opt/ros/melodic/share/dynamic_reconfigure/cmake
 example_ros_library_BINARY_DIR:STATIC=/home/davide/ros_ws/build/example_ros_library
 
 //Dependencies for the target
-example_ros_library_LIB_DEPENDS:STATIC=general;/opt/ros/melodic/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/usr/lib/x86_64-linux-gnu/libboost_signals.so;general;/opt/ros/melodic/lib/librosconsole.so;general;/opt/ros/melodic/lib/librosconsole_log4cxx.so;general;/opt/ros/melodic/lib/librosconsole_backend_interface.so;general;/usr/lib/x86_64-linux-gnu/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/melodic/lib/libxmlrpcpp.so;general;/opt/ros/melodic/lib/libroscpp_serialization.so;general;/opt/ros/melodic/lib/librostime.so;general;/opt/ros/melodic/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4;
+example_ros_library_LIB_DEPENDS:STATIC=general;/opt/ros/melodic/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/opt/ros/melodic/lib/librosconsole.so;general;/opt/ros/melodic/lib/librosconsole_log4cxx.so;general;/opt/ros/melodic/lib/librosconsole_backend_interface.so;general;/usr/lib/x86_64-linux-gnu/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/melodic/lib/libxmlrpcpp.so;general;/opt/ros/melodic/lib/libroscpp_serialization.so;general;/opt/ros/melodic/lib/librostime.so;general;/opt/ros/melodic/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4;
 
 //Value Computed by CMake
 example_ros_library_SOURCE_DIR:STATIC=/home/davide/ros_ws/src/example_ros_library
@@ -316,6 +334,12 @@ first_pkg_BINARY_DIR:STATIC=/home/davide/ros_ws/build/first_pkg
 
 //Value Computed by CMake
 first_pkg_SOURCE_DIR:STATIC=/home/davide/ros_ws/src/first_pkg
+
+//Value Computed by CMake
+followbot_BINARY_DIR:STATIC=/home/davide/ros_ws/build/rosbook/followbot
+
+//Value Computed by CMake
+followbot_SOURCE_DIR:STATIC=/home/davide/ros_ws/src/rosbook/followbot
 
 //The directory containing a CMake configuration file for gazebo_msgs.
 gazebo_msgs_DIR:PATH=/opt/ros/melodic/share/gazebo_msgs/cmake
@@ -415,10 +439,121 @@ prova_BINARY_DIR:STATIC=/home/davide/ros_ws/build/prova
 prova_SOURCE_DIR:STATIC=/home/davide/ros_ws/src/prova
 
 //Value Computed by CMake
+rbcar_joystick_BINARY_DIR:STATIC=/home/davide/ros_ws/build/ackerman_ros_robot_gazebo_simulation/rbcar_sim/rbcar_joystick
+
+//Value Computed by CMake
+rbcar_joystick_SOURCE_DIR:STATIC=/home/davide/ros_ws/src/ackerman_ros_robot_gazebo_simulation/rbcar_sim/rbcar_joystick
+
+//Value Computed by CMake
+rbcar_localization_BINARY_DIR:STATIC=/home/davide/ros_ws/build/ackerman_ros_robot_gazebo_simulation/rbcar_common/rbcar_localization
+
+//Value Computed by CMake
+rbcar_localization_SOURCE_DIR:STATIC=/home/davide/ros_ws/src/ackerman_ros_robot_gazebo_simulation/rbcar_common/rbcar_localization
+
+//Value Computed by CMake
+rbcar_navigation_BINARY_DIR:STATIC=/home/davide/ros_ws/build/ackerman_ros_robot_gazebo_simulation/rbcar_common/rbcar_navigation
+
+//Value Computed by CMake
+rbcar_navigation_SOURCE_DIR:STATIC=/home/davide/ros_ws/src/ackerman_ros_robot_gazebo_simulation/rbcar_common/rbcar_navigation
+
+//Value Computed by CMake
+rbcar_sim_bringup_BINARY_DIR:STATIC=/home/davide/ros_ws/build/ackerman_ros_robot_gazebo_simulation/rbcar_sim/rbcar_sim_bringup
+
+//Value Computed by CMake
+rbcar_sim_bringup_SOURCE_DIR:STATIC=/home/davide/ros_ws/src/ackerman_ros_robot_gazebo_simulation/rbcar_sim/rbcar_sim_bringup
+
+//Value Computed by CMake
+robot2_BINARY_DIR:STATIC=/home/davide/ros_ws/build/robot2
+
+//Value Computed by CMake
+robot2_SOURCE_DIR:STATIC=/home/davide/ros_ws/src/robot2
+
+//Value Computed by CMake
+robot3_BINARY_DIR:STATIC=/home/davide/ros_ws/build/robot3
+
+//Value Computed by CMake
+robot3_SOURCE_DIR:STATIC=/home/davide/ros_ws/src/robot3
+
+//Value Computed by CMake
+robot4_BINARY_DIR:STATIC=/home/davide/ros_ws/build/robot4
+
+//Value Computed by CMake
+robot4_SOURCE_DIR:STATIC=/home/davide/ros_ws/src/robot4
+
+//Value Computed by CMake
+robot5_BINARY_DIR:STATIC=/home/davide/ros_ws/build/robot5
+
+//Value Computed by CMake
+robot5_SOURCE_DIR:STATIC=/home/davide/ros_ws/src/robot5
+
+//Value Computed by CMake
+robot6_BINARY_DIR:STATIC=/home/davide/ros_ws/build/robot6
+
+//Value Computed by CMake
+robot6_SOURCE_DIR:STATIC=/home/davide/ros_ws/src/robot6
+
+//Value Computed by CMake
+robot7_BINARY_DIR:STATIC=/home/davide/ros_ws/build/robot7
+
+//Value Computed by CMake
+robot7_SOURCE_DIR:STATIC=/home/davide/ros_ws/src/robot7
+
+//Value Computed by CMake
+robot8_BINARY_DIR:STATIC=/home/davide/ros_ws/build/robot8
+
+//Value Computed by CMake
+robot8_SOURCE_DIR:STATIC=/home/davide/ros_ws/src/robot8
+
+//Value Computed by CMake
+robot_A_BINARY_DIR:STATIC=/home/davide/ros_ws/build/robot_A
+
+//Value Computed by CMake
+robot_A_SOURCE_DIR:STATIC=/home/davide/ros_ws/src/robot_A
+
+//Value Computed by CMake
+robot_a_BINARY_DIR:STATIC=/home/davide/ros_ws/build/robot_a
+
+//Value Computed by CMake
+robot_a_SOURCE_DIR:STATIC=/home/davide/ros_ws/src/robot_a
+
+//Value Computed by CMake
+robot_c_BINARY_DIR:STATIC=/home/davide/ros_ws/build/robot_c
+
+//Value Computed by CMake
+robot_c_SOURCE_DIR:STATIC=/home/davide/ros_ws/src/robot_c
+
+//Value Computed by CMake
+robot_d_BINARY_DIR:STATIC=/home/davide/ros_ws/build/robot_d
+
+//Value Computed by CMake
+robot_d_SOURCE_DIR:STATIC=/home/davide/ros_ws/src/robot_d
+
+//Value Computed by CMake
 robot_description_BINARY_DIR:STATIC=/home/davide/ros_ws/build/robot_description
 
 //Value Computed by CMake
 robot_description_SOURCE_DIR:STATIC=/home/davide/ros_ws/src/robot_description
+
+//Value Computed by CMake
+robot_e_BINARY_DIR:STATIC=/home/davide/ros_ws/build/robot_e
+
+//Value Computed by CMake
+robot_e_SOURCE_DIR:STATIC=/home/davide/ros_ws/src/robot_e
+
+//Value Computed by CMake
+robot_f_BINARY_DIR:STATIC=/home/davide/ros_ws/build/robot_f
+
+//Value Computed by CMake
+robot_f_SOURCE_DIR:STATIC=/home/davide/ros_ws/src/robot_f
+
+//Value Computed by CMake
+robot_g_BINARY_DIR:STATIC=/home/davide/ros_ws/build/robot_g
+
+//Value Computed by CMake
+robot_g_SOURCE_DIR:STATIC=/home/davide/ros_ws/src/robot_g
+
+//The directory containing a CMake configuration file for robotnik_msgs.
+robotnik_msgs_DIR:PATH=robotnik_msgs_DIR-NOTFOUND
 
 //Value Computed by CMake
 robots_BINARY_DIR:STATIC=/home/davide/ros_ws/build/robots
@@ -443,6 +578,9 @@ rosgraph_DIR:PATH=/opt/ros/melodic/share/rosgraph/cmake
 
 //The directory containing a CMake configuration file for rosgraph_msgs.
 rosgraph_msgs_DIR:PATH=/opt/ros/melodic/share/rosgraph_msgs/cmake
+
+//The directory containing a CMake configuration file for roslaunch.
+roslaunch_DIR:PATH=/opt/ros/melodic/share/roslaunch/cmake
 
 //The directory containing a CMake configuration file for roslib.
 roslib_DIR:PATH=/opt/ros/melodic/share/roslib/cmake
@@ -471,6 +609,18 @@ std_msgs_DIR:PATH=/opt/ros/melodic/share/std_msgs/cmake
 //The directory containing a CMake configuration file for std_srvs.
 std_srvs_DIR:PATH=/opt/ros/melodic/share/std_srvs/cmake
 
+//Value Computed by CMake
+stockroom_bot_BINARY_DIR:STATIC=/home/davide/ros_ws/build/rosbook/stockroom_bot
+
+//Value Computed by CMake
+stockroom_bot_SOURCE_DIR:STATIC=/home/davide/ros_ws/src/rosbook/stockroom_bot
+
+//Value Computed by CMake
+teb_local_planner_tutorials_BINARY_DIR:STATIC=/home/davide/ros_ws/build/ackerman_ros_robot_gazebo_simulation/custom_controllers/teb_local_planner_tutorials
+
+//Value Computed by CMake
+teb_local_planner_tutorials_SOURCE_DIR:STATIC=/home/davide/ros_ws/src/ackerman_ros_robot_gazebo_simulation/custom_controllers/teb_local_planner_tutorials
+
 //The directory containing a CMake configuration file for tf2.
 tf2_DIR:PATH=/opt/ros/melodic/share/tf2/cmake
 
@@ -490,13 +640,19 @@ tf_DIR:PATH=/opt/ros/melodic/share/tf/cmake
 traj_builder_BINARY_DIR:STATIC=/home/davide/ros_ws/build/traj_builder
 
 //Dependencies for the target
-traj_builder_LIB_DEPENDS:STATIC=general;/opt/ros/melodic/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/usr/lib/x86_64-linux-gnu/libboost_signals.so;general;/opt/ros/melodic/lib/librosconsole.so;general;/opt/ros/melodic/lib/librosconsole_log4cxx.so;general;/opt/ros/melodic/lib/librosconsole_backend_interface.so;general;/usr/lib/x86_64-linux-gnu/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/melodic/lib/libroscpp_serialization.so;general;/opt/ros/melodic/lib/libxmlrpcpp.so;general;/opt/ros/melodic/lib/librostime.so;general;/opt/ros/melodic/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4;
+traj_builder_LIB_DEPENDS:STATIC=general;/opt/ros/melodic/lib/libroscpp.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;/opt/ros/melodic/lib/librosconsole.so;general;/opt/ros/melodic/lib/librosconsole_log4cxx.so;general;/opt/ros/melodic/lib/librosconsole_backend_interface.so;general;/usr/lib/x86_64-linux-gnu/liblog4cxx.so;general;/usr/lib/x86_64-linux-gnu/libboost_regex.so;general;/opt/ros/melodic/lib/libroscpp_serialization.so;general;/opt/ros/melodic/lib/libxmlrpcpp.so;general;/opt/ros/melodic/lib/librostime.so;general;/opt/ros/melodic/lib/libcpp_common.so;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libboost_chrono.so;general;/usr/lib/x86_64-linux-gnu/libboost_date_time.so;general;/usr/lib/x86_64-linux-gnu/libboost_atomic.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4;
 
 //Value Computed by CMake
 traj_builder_SOURCE_DIR:STATIC=/home/davide/ros_ws/src/traj_builder
 
 //The directory containing a CMake configuration file for trajectory_msgs.
 trajectory_msgs_DIR:PATH=/opt/ros/melodic/share/trajectory_msgs/cmake
+
+//Value Computed by CMake
+world_description_BINARY_DIR:STATIC=/home/davide/ros_ws/build/world_description
+
+//Value Computed by CMake
+world_description_SOURCE_DIR:STATIC=/home/davide/ros_ws/src/world_description
 
 //The directory containing a CMake configuration file for xacro.
 xacro_DIR:PATH=/opt/ros/melodic/share/xacro/cmake
@@ -614,7 +770,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=9
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=8
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -656,7 +812,7 @@ CMAKE_UNAME:INTERNAL=/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Details about finding PythonInterp
-FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python2][v2.7.15()]
+FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python2][v2.7.17()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 GMOCK_FROM_SOURCE_FOUND:INTERNAL=TRUE

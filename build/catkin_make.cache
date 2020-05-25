@@ -1,2 +1,2 @@
-example_ros_library:robot_description:robots:spawn_robot_tools/spawn_robot_tools_pkg:traj_builder
+mapping:robot_description:robots:world_description
 -DCATKIN_DEVEL_PREFIX=/home/davide/ros_ws/devel -DCMAKE_INSTALL_PREFIX=/home/davide/ros_ws/install -G Unix Makefiles

@@ -1,0 +1,1 @@
+controller_joint_names: ['', 'fork_c_joint', 'bearing_c_joint', 'wheel_c_joint', 'right_wheel_joint', 'left_wheel_joint', ]

@@ -132,10 +132,8 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/davide/ros_ws/build/gtest/cmake_install.cmake")
   include("/home/davide/ros_ws/build/robot_description/cmake_install.cmake")
-  include("/home/davide/ros_ws/build/example_ros_library/cmake_install.cmake")
   include("/home/davide/ros_ws/build/robots/cmake_install.cmake")
-  include("/home/davide/ros_ws/build/spawn_robot_tools/spawn_robot_tools_pkg/cmake_install.cmake")
-  include("/home/davide/ros_ws/build/traj_builder/cmake_install.cmake")
+  include("/home/davide/ros_ws/build/world_description/cmake_install.cmake")
 
 endif()
 

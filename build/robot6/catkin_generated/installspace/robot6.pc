@@ -1,0 +1,8 @@
+prefix=/home/davide/ros_ws/install
+
+Name: robot6
+Description: Description of robot6
+Version: 1.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

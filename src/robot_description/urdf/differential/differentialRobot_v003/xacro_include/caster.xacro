@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+
+<robot name="caster" xmlns:xacro="http://www.ros.org/wiki/xacro">
+      <xacro:macro name="caster">
+
+      <link name="caster_link">
+
+        <visual>
+          <origin xyz="0 0 0" rpy="0 0 0" />
+          <geometry>
+               <box size="${caster_dim_X} ${caster_dim_Y} ${caster_dim_Z}"/>
+          </geometry>
+         </visual>
+
+        <collision>
+          <origin xyz="0 0 0" rpy="0 0 0" />
+          <geometry>
+              <box size="${caster_dim_X} ${caster_dim_Y} ${caster_dim_Z}"/>
+          </geometry>
+         </collision>
+
+        <inertial>
+          <origin xyz="0 0 0" rpy="0 0 0" />
+          <mass value="${caster_mass}"/>
+          <box_inertia m="${caster_mass}" x="${caster_dim_X}" y= "${caster_dim_Y}" z="${caster_dim_Z}"/>
+         </inertial>
+       </link>
+
+
+      <joint name="caster_joint" type="continuous">
+          <parent link="base_link"/>
+          <child link="caster_link"/>
+          <origin xyz="${(-(base_dim_X/2))-caster_dim_X} 0 ${-((wheel_radius+(base_dim_Z/2))-((caster_dim_Z/2)+(wheel_caster_radius)))}" rpy="0 0 0" /> 
+          <axis xyz="0 0 1" rpy="0 0 0" />
+          <limit effort="100" velocity="100"/>
+          <joint_properties damping="0.0" friction="0.0"/>
+         </joint>
+
+
+      
+      <link name="wheel_caster_link">
+
+         <visual>
+           <origin xyz="0 0 0" rpy="${PI/2} 0 0" />
+           <geometry>
+                <cylinder length="${wheel_caster_lenght}" radius="${wheel_caster_radius}"/>
+           </geometry>
+         </visual>
+
+         <collision>
+           <origin xyz="0 0 0" rpy="${PI/2} 0 0" />
+           <geometry>
+               <cylinder length="${wheel_caster_lenght}" radius="${wheel_caster_radius}"/>
+           </geometry>
+         </collision>
+
+         <inertial>
+           <origin xyz="0 0 0" rpy="0 0 0" />
+           <mass value="${wheel_caster_mass}"/>
+           <cylinder_inertia m="${wheel_caster_mass}" r="${wheel_caster_radius}" h="${wheel_caster_lenght}"/>
+         </inertial>
+         </link>
+
+      <joint name="wheel_caster_joint" type="continuous">
+          <parent link="caster_link"/>
+          <child link="wheel_caster_link"/>
+          <origin xyz="${-(caster_dim_X/2)} 0 ${-(caster_dim_Z/2)} " rpy="0 0 0" /> 
+          <axis xyz="0 1 0" rpy="0 0 0" />
+          <limit effort="100" velocity="100"/>
+          <joint_properties damping="0.0" friction="0.0"/>
+         </joint>
+
+     </xacro:macro>
+
+</robot>

@@ -92,7 +92,6 @@ traj_builder_example_main_EXTERNAL_OBJECTS =
 /home/davide/ros_ws/devel/lib/traj_builder/traj_builder_example_main: traj_builder/CMakeFiles/traj_builder_example_main.dir/build.make
 /home/davide/ros_ws/devel/lib/traj_builder/traj_builder_example_main: /opt/ros/melodic/lib/libroscpp.so
 /home/davide/ros_ws/devel/lib/traj_builder/traj_builder_example_main: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/davide/ros_ws/devel/lib/traj_builder/traj_builder_example_main: /usr/lib/x86_64-linux-gnu/libboost_signals.so
 /home/davide/ros_ws/devel/lib/traj_builder/traj_builder_example_main: /opt/ros/melodic/lib/librosconsole.so
 /home/davide/ros_ws/devel/lib/traj_builder/traj_builder_example_main: /opt/ros/melodic/lib/librosconsole_log4cxx.so
 /home/davide/ros_ws/devel/lib/traj_builder/traj_builder_example_main: /opt/ros/melodic/lib/librosconsole_backend_interface.so
@@ -112,7 +111,6 @@ traj_builder_example_main_EXTERNAL_OBJECTS =
 /home/davide/ros_ws/devel/lib/traj_builder/traj_builder_example_main: /home/davide/ros_ws/devel/lib/libtraj_builder.so
 /home/davide/ros_ws/devel/lib/traj_builder/traj_builder_example_main: /opt/ros/melodic/lib/libroscpp.so
 /home/davide/ros_ws/devel/lib/traj_builder/traj_builder_example_main: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/davide/ros_ws/devel/lib/traj_builder/traj_builder_example_main: /usr/lib/x86_64-linux-gnu/libboost_signals.so
 /home/davide/ros_ws/devel/lib/traj_builder/traj_builder_example_main: /opt/ros/melodic/lib/librosconsole.so
 /home/davide/ros_ws/devel/lib/traj_builder/traj_builder_example_main: /opt/ros/melodic/lib/librosconsole_log4cxx.so
 /home/davide/ros_ws/devel/lib/traj_builder/traj_builder_example_main: /opt/ros/melodic/lib/librosconsole_backend_interface.so

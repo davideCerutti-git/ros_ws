@@ -9,7 +9,6 @@ if [ -n "$DESTDIR" ] ; then
             /bin/echo "otherwise python's distutils will bork things."
             exit 1
     esac
-    DESTDIR_ARG="--root=$DESTDIR"
 fi
 
 echo_and_run() { echo "+ $@" ; "$@" ; }
@@ -29,5 +28,5 @@ echo_and_run /usr/bin/env \
     "/home/davide/ros_ws/src/spawn_robot_tools/spawn_robot_tools_pkg/setup.py" \
     build --build-base "/home/davide/ros_ws/build/spawn_robot_tools/spawn_robot_tools_pkg" \
     install \
-    $DESTDIR_ARG \
+    --root="${DESTDIR-/}" \
     --install-layout=deb --prefix="/home/davide/ros_ws/install" --install-scripts="/home/davide/ros_ws/install/bin"
